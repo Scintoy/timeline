@@ -1,0 +1,30 @@
+@import "lib/bootstrap.less";
+
+@liWidth: 120px;
+@liWidthn: -120px;
+
+#timeline {
+  .pre, .next {
+    float: left;
+    width: 40px;
+    padding: 10px;
+  }
+  .timeline-inner { 
+    width: @liWidth * 7;
+    height: 40px;
+    overflow: hidden;
+    float: left;
+    .datelist {
+      width: @liWidth * 30; 
+      margin-left: @liWidthn * 23;
+      li {
+        display: text-inline;
+        float: left;
+        list-style: none;
+        padding: 10px 20px;
+        width: 80px;
+      }
+      background: @grayLighter;
+    }
+  }
+} 
